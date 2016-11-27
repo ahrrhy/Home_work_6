@@ -49,7 +49,11 @@ body {
 	}
 }
 .enter {
-	
+	font: 400 12px/23px "Arial";
+	color: #747474;	
+	&:hover .show-enter{
+		display:block;
+	};
 }
 .show-reg {
 
@@ -69,7 +73,9 @@ body {
 			font: 400 18px/63px "Arial";
 			color:#81badc;
 		}
-	}
+		&::-moz-placeholder{color:#81badc;}
+		&::-moz-placeholder{color:#81badc;}
+	}	
 	& .left{
 		background-color: #d5f1fa;
 		float: left;
@@ -77,7 +83,9 @@ body {
 		padding: 10px;
 	}
 	& .right{
-		margin: 0px 20px 14px 0;
+		font: 400 18px/36px "Arial";
+		color: #ffffff;
+		margin: 0px 20px 0 0;
 		float: right;
 		width: 64px;
 		background-color: #00a8ff;
@@ -114,28 +122,37 @@ body {
 		border-radius: 8px;
 		&::-webkit-input-placeholder {
 			padding:2px 0 0 10px;
-			font: 400 16px/63px "Arial";
+			font: 400 18px/63px "Arial";
 			color:#81badc;
+			background-color: #d5f1fa
 		}
 		&::-ms-input-placeholder {
 			padding:2px 0 0 10px;
 			font: 400 18px/63px "Arial";
 			color:#81badc;
+			background-color: #d5f1fa
 		}
+	}
+	& .left{
+		background-color: #d5f1fa;
+		float: left;
+		margin: 10px 5px 10px 5px;
+		padding: 10px 5px 10px 5px;
+	}
+	& .right{
+		font: 400 18px/36px "Arial";
+		margin: 8px 20px 14px 0;
+		float: left;
+		width: 64px;
+		color: #ffffff;
+		background-color: #00a8ff;
 	}
 	& .sign-in{
 		padding: 10px;
-		& li:first-child{
-			margin:23px 5px 23px 23px;
-			padding: 20 25px 10px 0;
-		}
-		& li:last-child{
-			margin:23px 23px 23px 5px;
-			padding: 20 25px 10px 0;
-		}
 	}
 	& .sign-in li{
 		display: inline;
+
 	}
 	
 
