@@ -640,3 +640,27 @@ body {
 .before a {
   font: bold 14px/26px "Arial";
 }
+
+/* line 474, ../sass/screen.scss */
+.goals {
+  font: 400 14px/19px "Arial";
+}
+/* line 476, ../sass/screen.scss */
+.goals h1 {
+  border-bottom: 1px solid #009eee;
+  text-decoration: none;
+}
+/* line 480, ../sass/screen.scss */
+.goals p {
+  padding: 15px 0 0 0;
+}
+/* line 483, ../sass/screen.scss */
+.goals img {
+  margin: 20px 0;
+}
+/* line 486, ../sass/screen.scss */
+.goals h2 {
+  margin: 20px 0 15px 0;
+  color: #03a7fe;
+  font: 400 18px/19px "Arial";
+}
