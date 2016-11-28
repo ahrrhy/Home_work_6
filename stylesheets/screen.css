@@ -473,32 +473,31 @@ body {
   float: right;
   padding-top: 1px;
   width: 528px;
-  height: 1176px;
 }
-/* line 335, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 #main h1 {
   font: 400 26px/36px "Arial";
   padding: 30px 0 7px 21px;
   letter-spacing: 0.1px;
 }
-/* line 340, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 #main .header-dt {
   font: 400 22px/30px "Arial";
   color: #03a7fe;
   width: 393px;
 }
-/* line 345, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 #main .compain-logo {
   float: left;
   padding: 7px 20px 120px 0;
 }
-/* line 350, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 #main .for-dl {
   border-top: 1px solid #00a7fb;
   width: 528px;
   padding: 7px 0 7px 10px;
 }
-/* line 355, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 #main .dl-comp {
   display: table;
   text-align: center;
@@ -506,7 +505,7 @@ body {
   font: 400 12px/20px "Arial";
   padding: 10px 0 20px 10px;
 }
-/* line 362, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 #main .dl-comp-dt {
   font: 400 12px/20px "Arial";
   margin: 0;
@@ -516,7 +515,7 @@ body {
   background-color: #dfe5e6;
   border-top: 1px solid #fff;
 }
-/* line 371, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 #main .dl-comp-dd {
   font: 400 12px/20px "Arial";
   width: 150px;
@@ -524,11 +523,11 @@ body {
   background-color: #dfe5e6;
   border-top: 1px solid #fff;
 }
-/* line 378, ../sass/screen.scss */
+/* line 377, ../sass/screen.scss */
 #main .site {
   color: #03a7fe;
 }
-/* line 381, ../sass/screen.scss */
+/* line 380, ../sass/screen.scss */
 #main .fa-ic {
   font: 400 12px/20px "Arial";
   margin: 0;
@@ -538,7 +537,7 @@ body {
   background-color: #dfe5e6;
   border-top: 1px solid #fff;
 }
-/* line 390, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 #main .contacts {
   font: 400 12px/20px "Arial";
   width: 150px;
@@ -548,14 +547,21 @@ body {
   border-top: 1px solid #fff;
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 #footer {
   clear: both;
   width: 776px;
   border-top: 1px solid #b5b5b7;
   margin: 100px 0 0 0;
 }
-/* line 404, ../sass/screen.scss */
+/* line 403, ../sass/screen.scss */
+#footer img {
+  float: right;
+  width: 24px;
+  height: 16px;
+  padding: 8px 20px 8px 0;
+}
+/* line 410, ../sass/screen.scss */
 #footer .footer {
   margin-left: 247px;
   text-indent: 14px;
@@ -566,4 +572,71 @@ body {
   border-bottom-right-radius: 18px;
   font: 400 10px/25px "Arial";
   background-color: #d9dada;
+}
+
+/* line 422, ../sass/screen.scss */
+.crisis {
+  color: #666767;
+}
+/* line 424, ../sass/screen.scss */
+.crisis h1 {
+  border-bottom: 1px solid #009eee;
+  text-decoration: none;
+}
+/* line 428, ../sass/screen.scss */
+.crisis h1 > a {
+  color: #010101;
+  text-decoration: none;
+}
+/* line 432, ../sass/screen.scss */
+.crisis .cr-dl {
+  font: 400 10px/25px "Arial";
+  float: left;
+}
+/* line 436, ../sass/screen.scss */
+.crisis .cr-dl dt, .crisis dd {
+  float: left;
+  padding-right: 5px;
+}
+/* line 440, ../sass/screen.scss */
+.crisis a {
+  text-decoration: underline;
+  color: #0793ec;
+}
+/* line 444, ../sass/screen.scss */
+.crisis .date {
+  font: 400 10px/25px "Arial";
+  color: #d1d1d1;
+  text-align: right;
+}
+/* line 449, ../sass/screen.scss */
+.crisis .text {
+  font: 400 12px/16px "Arial";
+  padding: 10px 0 0 0;
+}
+/* line 453, ../sass/screen.scss */
+.crisis .fa {
+  padding-right: 1px;
+}
+/* line 456, ../sass/screen.scss */
+.crisis .gray {
+  color: #979797;
+}
+/* line 459, ../sass/screen.scss */
+.crisis footer {
+  font: 400 12px/16px "Arial";
+  padding-top: 10px;
+}
+
+/* line 464, ../sass/screen.scss */
+.before {
+  width: 178px;
+  margin: 20px 0 48px 15px;
+  text-align: center;
+  border: 2px solid #00a5ff;
+  border-radius: 18px;
+}
+/* line 470, ../sass/screen.scss */
+.before a {
+  font: bold 14px/26px "Arial";
 }
