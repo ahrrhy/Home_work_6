@@ -16,7 +16,7 @@
 				<li class="reg">
 					<a href="#">регистрация</a>
 					<form class="show-reg">
-						<ul class="register">
+						<ul>
 							<li><input class="left" type="text" name="name" id="name" placeholder="имя" size="30" /></li>
 							<li><input class="left" type="text" name="last-name" id="last-name" placeholder="фамилия" size="30" /></li>
 							<li><input class="left" type="email" name="email" id="email" placeholder="email" size="30"></li>
@@ -31,71 +31,69 @@
 				<li class="enter">
 					<a href="#">вход</a>
 					<form class="show-enter">
-							<ul class="sign-in">
-								<li><input class="left" type="text" name="login" id="login" placeholder="логин" /></li>
-								<li><input class="left" type="text" name="password" id="password" placeholder="*******" /></li>
-								<li><input class="right" type="submit" name="sub-reg" value="&crarr;" /></li>
-							</ul>
+						<ul class="sign-in">
+							<li><input class="left" type="text" name="login" id="login" placeholder="логин" /></li>
+							<li><input class="left" type="text" name="password" id="password" placeholder="*******" /></li>
+							<li><input class="right" type="submit" name="sub-reg" value="&crarr;" /></li>
+						</ul>
 					</form>
 				</li>				
 			</ul>
-			<div id="logo">
-				<a href="index.html">
-					<img src="images/logo.png" alt="m2m" class="logo">
-					<h1>managers to <span class="man">manegers</span></h1>
-				</a>
-			</div>
+			<a href="index.html">
+				<div class="logo">
+					<img src="images/logo.png" alt="m2m">
+					<h1>managers to manegers</h1>
+				</div>
+			</a>
 			<p class="community">Сообщество ІТ-компаний города Черкассы</p>	
 			<menu id="main-nav">
 				<ul class="main-ul">
-					<li>главная</li>
-					<li>цель проекта</li>
-					<li>компании</li>
+					<li><a href=""> главная</a></li>
+					<li><a href=""> цель проекта</a></li>
+					<li><a href=""> компании</a></li>
 				</ul>		
 			</menu>		
 		</header>
 		<section id="big-one">
-			<aside id="categories">
-				<h2 id="categories-header">Категории<i class="fa fa-caret-down" aria-hidden="true"></i></h2>
-				<ul class="categories">
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</li>
-					<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</li>
+			<aside class="categories">
+				<h2 class="categories-header">Категории<i class="fa fa-caret-down" aria-hidden="true"></i></h2>
+				<ul class="categories-ul">
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>CMS</a></li>
+					<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>Design Patterns</a></li>
 				</ul>
-				<section id="adv">
-					<div id="rss">
-						<button id="rss-but" type="button">RSS</button>
+				<section class="adv">
+					<div class="rss">
+						<a href="#"><button class="rss-but" type="button"><i class="fa fa-rss" aria-hidden="true"></i>RSS</button></a>
 					</div>
-					<div id="icons">
-						<a href="#"><img id="master-of" src="images/master-of.png" alt="master-of.png" /></a>
-						<a href="#"><img id="forma" src="images/forma.png" alt="forma.png" /></a>
-						<a href="#"><img id="interlink" src="images/interlink.png" alt="interlink.png" /></a>
-						<a href="#"><img id="web" src="images/web.png" alt="web.png" /></a>
-						<a href="#"><img id="artsoft" src="images/artsoft.png" alt="artsoft.png" /></a>
+					<div class="icons">
+						<a href="#"><img class="master-of" src="images/master-of.png" alt="master-of.png" /></a>
+						<a href="#"><img class="forma" src="images/forma.png" alt="forma.png" /></a>
+						<a href="#"><img class="interlink" src="images/interlink.png" alt="interlink.png" /></a>
+						<a href="#"><img class="web" src="images/web.png" alt="web.png" /></a>
+						<a href="#"><img class="artsoft" src="images/artsoft.png" alt="artsoft.png" /></a>
 					</div>
 				</section>
 			</aside>
 			<main id="main">
 				<h1>Компании</h1>
-				<div class="for-dl">
+				<article class="for-dl">
+					<img class="compain-logo" src="images/icon-table.png" alt="compain-logo">
+					<h2 class="header-dt">Kyosho Inc.</h2>
 					<dl class="dl-comp">
-						<dt class="header-dt">
-							Kyosho Inc.
-						</dt>
-
 						<dt class="dl-comp-dt">количество работников</dt>
 						<dd class="dl-comp-dd">50</dd>
 							
@@ -111,53 +109,25 @@
 						<dt class="dl-comp-dt">CEO</dt>
 						<dd class="dl-comp-dd">Agent Anderson Smith</dd>
 				
-						<dd class="phone"><a class="phone" href="tel:+11858745254">+1 185 8745-254</a></dd>
-											
-						<dd class="skype"><a class="skype" href="callto:+11858745254">smithy</a></dd>
-											
-						<dd class="email"><a class="email" href="mailto:smithy@sobakka.net">smithy@sobakka.net</a></dd>
-				
-						<dd class="twiter"><a class="twiter" href="#">smither</a></dd>
+						<dt class="fa-ic"><i class="fa fa-phone" aria-hidden="true"></i></dt>
+						<dd class="contacts"><a class="phone" href="tel:+11858745254">+1 185 8745-254</a></dd>
+						
+						<dt class="fa-ic"><i class="fa fa-skype" aria-hidden="true"></i></dt>					
+						<dd class="contacts"><a class="skype" href="callto:+11858745254">smithy</a></dd>
+						
+						<dt class="fa-ic"><i class="fa fa-envelope-o" aria-hidden="true"></i></dt>					
+						<dd class="contacts"><a class="email" href="mailto:smithy@sobakka.net">smithy@sobakka.net</a></dd>
+						
+						<dt class="fa-ic"><i class="fa fa-twitter" aria-hidden="true"></i></dt>
+						<dd class="contacts"><a class="twiter" href="#">smither</a></dd>
 		
 					</dl>
-				</div>
-				<div class="for-dl">
+				</article>
+				<article class="for-dl">
+					<img class="compain-logo" src="images/icon-table.png" alt="compain-logo">
+					<h2 class="header-dt">Kyosho Inc.</h2>
+					
 					<dl class="dl-comp">
-						<dt class="header-dt">
-							Kyosho Inc.
-						</dt>
-
-						<dt class="dl-comp-dt">количество работников</dt>
-						<dd class="dl-comp-dd">50</dd>
-							
-						<dt class="dl-comp-dt">технологии</dt>
-						<dd class="dl-comp-dd">PHP, Flash, Ruby</dd>
-														
-						<dt class="dl-comp-dt">возраст (лет на рынке)</dt>	
-						<dd class="dl-comp-dd">20</dd>
-							
-						<dt class="dl-comp-dt">сайт</dt>
-						<dd class="site dl-comp-dd"><a class="site" href="www.kyosho.org">www.kyosho.org</a></dd>
-		
-						<dt class="dl-comp-dt">CEO</dt>
-						<dd class="dl-comp-dd">Agent Anderson Smith</dd>
-				
-						<dd class="phone"><a class="phone" href="tel:+11858745254">+1 185 8745-254</a></dd>
-											
-						<dd class="skype"><a class="skype" href="callto:+11858745254">smithy</a></dd>
-											
-						<dd class="email"><a class="email" href="mailto:smithy@sobakka.net">smithy@sobakka.net</a></dd>
-				
-						<dd class="twiter"><a class="twiter" href="#">smither</a></dd>
-		
-					</dl>
-				</div>
-				<div class="for-dl bot-bor">
-					<dl class="dl-comp">
-						<dt class="header-dt">
-							Kyosho Inc.
-						</dt>
-
 						<dt class="dl-comp-dt">количество работников</dt>
 						<dd class="dl-comp-dd">50</dd>
 							
@@ -173,16 +143,54 @@
 						<dt class="dl-comp-dt">CEO</dt>
 						<dd class="dl-comp-dd">Agent Anderson Smith</dd>
 				
-						<dd class="phone"><a class="phone" href="tel:+11858745254">+1 185 8745-254</a></dd>
-											
-						<dd class="skype"><a class="skype" href="callto:+11858745254">smithy</a></dd>
-											
-						<dd class="email"><a class="email" href="mailto:smithy@sobakka.net">smithy@sobakka.net</a></dd>
-				
-						<dd class="twiter"><a class="twiter" href="#">smither</a></dd>
+						<dt class="fa-ic"><i class="fa fa-phone" aria-hidden="true"></i></dt>
+						<dd class="contacts"><a class="phone" href="tel:+11858745254">+1 185 8745-254</a></dd>
+						
+						<dt class="fa-ic"><i class="fa fa-skype" aria-hidden="true"></i></dt>					
+						<dd class="contacts"><a class="skype" href="callto:+11858745254">smithy</a></dd>
+						
+						<dt class="fa-ic"><i class="fa fa-envelope-o" aria-hidden="true"></i></dt>					
+						<dd class="contacts"><a class="email" href="mailto:smithy@sobakka.net">smithy@sobakka.net</a></dd>
+						
+						<dt class="fa-ic"><i class="fa fa-twitter" aria-hidden="true"></i></dt>
+						<dd class="contacts"><a class="twiter" href="#">smither</a></dd>
 		
 					</dl>
-				</div>
+				</article>
+				<article class="for-dl bot-bor">
+					<img class="compain-logo" src="images/icon-table.png" alt="compain-logo">
+					<h2 class="header-dt">Kyosho Inc.</h2>
+
+					<dl class="dl-comp">
+						<dt class="dl-comp-dt">количество работников</dt>
+						<dd class="dl-comp-dd">50</dd>
+							
+						<dt class="dl-comp-dt">технологии</dt>
+						<dd class="dl-comp-dd">PHP, Flash, Ruby</dd>
+														
+						<dt class="dl-comp-dt">возраст (лет на рынке)</dt>
+						<dd class="dl-comp-dd">20</dd>
+							
+						<dt class="dl-comp-dt">сайт</dt>
+						<dd class="site dl-comp-dd"><a class="site" href="www.kyosho.org">www.kyosho.org</a></dd>
+		
+						<dt class="dl-comp-dt">CEO</dt>
+						<dd class="dl-comp-dd">Agent Anderson Smith</dd>
+				
+						<dt class="fa-ic"><i class="fa fa-phone" aria-hidden="true"></i></dt>
+						<dd class="contacts"><a class="phone" href="tel:+11858745254">+1 185 8745-254</a></dd>
+						
+						<dt class="fa-ic"><i class="fa fa-skype" aria-hidden="true"></i></dt>					
+						<dd class="contacts"><a class="skype" href="callto:+11858745254">smithy</a></dd>
+						
+						<dt class="fa-ic"><i class="fa fa-envelope-o" aria-hidden="true"></i></dt>					
+						<dd class="contacts"><a class="email" href="mailto:smithy@sobakka.net">smithy@sobakka.net</a></dd>
+						
+						<dt class="fa-ic"><i class="fa fa-twitter" aria-hidden="true"></i></dt>
+						<dd class="contacts"><a class="twiter" href="#">smither</a></dd>
+		
+					</dl>
+				</article>
 			</main>
 		</section>
 		<footer id="footer">

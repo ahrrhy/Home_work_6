@@ -67,7 +67,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 9, ../sass/screen.scss */
+@font-face {
+  font-family: 'AFKlampenborg';
+  src: url("../fonts/AFKlampenborg/AFKlampenborg.eot?#iefix") format("embedded-opentype"), url("../fonts/AFKlampenborg/AFKlampenborg.otf") format("opentype"), url("../fonts/AFKlampenborg/AFKlampenborg.woff") format("woff"), url("../fonts/AFKlampenborg/AFKlampenborg.ttf") format("truetype"), url("../fonts/AFKlampenborg/AFKlampenborg.svg#AFKlampenborg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helios';
+  src: url("../fonts/Helios/Helios.eot?#iefix") format("embedded-opentype"), url("../fonts/Helios/Helios.woff") format("woff"), url("../fonts/Helios/Helios.ttf") format("truetype"), url("../fonts/Helios/Helios.svg#Helios") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 20, ../sass/screen.scss */
+.fa {
+  color: #03a7fe;
+}
+
+/* line 23, ../sass/screen.scss */
+.fa-rss {
+  color: #ff9600;
+}
+
+/* line 26, ../sass/screen.scss */
+.fa-phone, .fa-skype, .fa-envelope-o, .fa-twitter {
+  color: #6c6c6c;
+}
+
+/* line 29, ../sass/screen.scss */
 body {
   background: #ced8d8;
   background: -webkit-linear-gradient(#ced8d8, #fff);
@@ -77,20 +104,51 @@ body {
   background-repeat: no-repeat;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 #conteiner {
   width: 776px;
   margin: 0 auto;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 #head {
   width: 776px;
   margin: 0 auto;
   border-bottom: 1px solid #939598;
 }
+/* line 45, ../sass/screen.scss */
+#head .logo {
+  width: 272px;
+  font: bold 19px/19px "AFKlampenborg";
+  color: #939598;
+  letter-spacing: 0.8px;
+  padding: 40px 0 0 0;
+}
+/* line 51, ../sass/screen.scss */
+#head .logo img {
+  float: left;
+  padding: 0;
+  margin-right: -3px;
+  display: inline;
+  width: 176px;
+  height: 84px;
+}
+/* line 59, ../sass/screen.scss */
+#head .logo h1 {
+  padding: 20px 0 0 0;
+}
+/* line 63, ../sass/screen.scss */
+#head .community {
+  color: #646464;
+  font: 400 15px/30px 'Arial';
+  text-align: right;
+  letter-spacing: 0.15px;
+  word-spacing: 0.3px;
+  padding: 0 0 50px 0;
+  margin: -40px 10px 10px 0;
+}
 
-/* line 27, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 #log {
   background-color: #ffffff;
   float: right;
@@ -102,34 +160,49 @@ body {
   text-align: center;
   color: #959595;
   padding-top: 10px;
+  clear: both;
 }
-/* line 38, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 #log li {
   display: inline;
 }
+/* line 88, ../sass/screen.scss */
+#log > li:after {
+  content: "|";
+}
+/* line 91, ../sass/screen.scss */
+#log li:last-child:after {
+  content: "";
+}
 
-/* line 43, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .reg {
   padding: 0 6px 0 8px;
   font: 400 12px/23px "Arial";
   color: #747474;
+  position: relative;
 }
-/* line 47, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .reg:hover .show-reg {
   display: block;
+  z-index: 9999;
+  position: inherit;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .enter {
   font: 400 12px/23px "Arial";
   color: #747474;
+  position: relative;
 }
-/* line 54, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .enter:hover .show-enter {
   display: block;
+  z-index: 9999;
+  position: inherit;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .show-reg {
   display: none;
   width: 428px;
@@ -137,37 +210,37 @@ body {
   background-color: #ffffff;
   float: right;
 }
-/* line 65, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .show-reg input {
   border: 1px solid #d5f1fa;
   border-radius: 8px;
 }
-/* line 68, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .show-reg input::-webkit-input-placeholder {
   font: 400 18px/63px "Arial";
   color: #81badc;
 }
-/* line 72, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .show-reg input::-ms-input-placeholder {
   font: 400 18px/63px "Arial";
   color: #81badc;
 }
-/* line 76, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .show-reg input::-moz-placeholder {
-  color: #81badc;
+  color: #6badd4;
 }
-/* line 77, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .show-reg input::-moz-placeholder {
-  color: #81badc;
+  color: #6badd4;
 }
-/* line 79, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .show-reg .left {
   background-color: #d5f1fa;
   float: left;
   margin: 10px 20px 4px 24px;
   padding: 10px;
 }
-/* line 85, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .show-reg .right {
   font: 400 18px/36px "Arial";
   color: #ffffff;
@@ -176,13 +249,13 @@ body {
   width: 64px;
   background-color: #00a8ff;
 }
-/* line 93, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .show-reg .photo-holder {
   width: 132px;
   height: 153px;
   padding-top: 10px;
 }
-/* line 99, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .show-reg .button {
   float: right;
   display: inline-block;
@@ -194,8 +267,28 @@ body {
   width: 132px;
   margin: 0 0 0 28px;
 }
+/* line 166, ../sass/screen.scss */
+.show-reg .file_upload {
+  display: block;
+  margin: 8px 0 0 0;
+  overflow: hidden;
+  font: 400 16px/63px "Arial";
+}
+/* line 171, ../sass/screen.scss */
+.show-reg .file_upload .button {
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 8em;
+  text-align: center;
+}
+/* line 178, ../sass/screen.scss */
+.show-reg .file_upload input[type=file] {
+  top: 0;
+  opacity: 0;
+}
 
-/* line 114, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .show-enter {
   display: none;
   width: 428px;
@@ -203,84 +296,274 @@ body {
   background-color: #ffffff;
   float: right;
 }
-/* line 120, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .show-enter input {
   border: 1px solid #d5f1fa;
   border-radius: 8px;
 }
-/* line 123, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .show-enter input::-webkit-input-placeholder {
   padding: 2px 0 0 10px;
   font: 400 18px/63px "Arial";
-  color: #81badc;
+  color: #6badd4;
   background-color: #d5f1fa;
 }
-/* line 129, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .show-enter input::-ms-input-placeholder {
   padding: 2px 0 0 10px;
   font: 400 18px/63px "Arial";
-  color: #81badc;
+  color: #6badd4;
   background-color: #d5f1fa;
 }
-/* line 136, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
+.show-enter input::-moz-placeholder {
+  color: #6badd4;
+}
+/* line 206, ../sass/screen.scss */
+.show-enter input::-moz-placeholder {
+  color: #6badd4;
+}
+/* line 208, ../sass/screen.scss */
 .show-enter .left {
   background-color: #d5f1fa;
   float: left;
   margin: 10px 5px 10px 5px;
   padding: 10px 5px 10px 5px;
 }
-/* line 142, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .show-enter .right {
   font: 400 18px/36px "Arial";
   margin: 8px 20px 14px 0;
   float: left;
-  width: 64px;
+  width: 60px;
   color: #ffffff;
   background-color: #00a8ff;
 }
-/* line 150, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .show-enter .sign-in {
   padding: 10px;
 }
-/* line 153, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .show-enter .sign-in li {
   display: inline;
 }
 
-/* line 160, ../sass/screen.scss */
-.file_upload {
-  display: block;
-  margin: 8px 0 0 0;
-  overflow: hidden;
-  font: 400 16px/63px "Arial";
+/* line 229, ../sass/screen.scss */
+#main-nav {
+  display: inline-block;
+  float: right;
+  text-align: right;
+  margin: -30px 22px 0px 0;
 }
-/* line 165, ../sass/screen.scss */
-.file_upload .button {
-  float: left;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  width: 8em;
+/* line 234, ../sass/screen.scss */
+#main-nav .main-ul li {
+  font: 400 18px/30px "Arial";
   text-align: center;
+  width: 130px;
+  display: inline-block;
+  border: 1px solid #939598;
+  margin-left: -1px;
+  float: left;
+  background: #e5eaeb;
+  background: -webkit-linear-gradient(#e5eaeb, #d9d7d5);
+  background: -o-linear-gradient(#e5eaeb, #d9d7d5);
+  background: -moz-linear-gradient(#e5eaeb, #d9d7d5);
+  background: linear-gradient(#e5eaeb, #d9d7d5);
 }
-/* line 172, ../sass/screen.scss */
-.file_upload input[type=file] {
-  top: 0;
-  opacity: 0;
+/* line 247, ../sass/screen.scss */
+#main-nav .main-ul li:hover {
+  background: -webkit-linear-gradient(#fff, #e8eced);
+  background: -o-linear-gradient(#fff, #e8eced);
+  background: -moz-linear-gradient(#fff, #e8eced);
+  background: linear-gradient(#fff, #e8eced);
+  border-bottom: #d9d7d5;
+}
+/* line 255, ../sass/screen.scss */
+#main-nav .main-ul li:last-child {
+  border-top-right-radius: 25px;
+}
+/* line 258, ../sass/screen.scss */
+#main-nav .main-ul li:first-child {
+  border-top-left-radius: 25px;
 }
 
-/* line 177, ../sass/screen.scss */
-#logo {
-  width: 300px;
-  font: bold 21px/19px "AFKlampenborg";
+/* line 262, ../sass/screen.scss */
+#big-one {
+  width: 777px;
+  margin: 30px 0 0 0;
+}
+/* line 265, ../sass/screen.scss */
+#big-one .categories {
+  width: 230px;
+  float: left;
+}
+/* line 269, ../sass/screen.scss */
+#big-one .categories-header {
+  font: 400 21px/24px "Arial";
+  color: #03a7fe;
+  margin: -5px 0 22px;
+}
+/* line 274, ../sass/screen.scss */
+#big-one .categories-ul li {
+  padding: 0 0 0 2px;
+  width: 230px;
+  border-bottom: 1px solid #c4c4c4;
+  font: 600 14px/32px "Arial";
+  color: #6a6a6a;
+}
+/* line 281, ../sass/screen.scss */
+#big-one .adv .rss {
+  margin-top: 43px;
+  padding: 15px 63px 16px 63px;
+  border-top: 1px solid #cbcac9;
+  border-bottom: 1px solid #cbcac9;
+}
+/* line 286, ../sass/screen.scss */
+#big-one .adv .rss .rss-but {
+  width: 102px;
   color: #939598;
-  letter-spacing: 0.8px;
+  background-color: #ffffff;
+  font: 500 21px/19px 'AFKlampenborg';
+  border: 3px solid #ff9600;
+  border-radius: 30px;
+  padding-left: 5px;
 }
-/* line 183, ../sass/screen.scss */
-#logo h1 {
-  float: left;
+/* line 295, ../sass/screen.scss */
+#big-one .adv .rss .icons {
+  margin: 29px;
+  float: right;
 }
-/* line 186, ../sass/screen.scss */
-#logo img {
+
+/* line 303, ../sass/screen.scss */
+.icons img {
+  filter: grayscale(100%);
+}
+/* line 305, ../sass/screen.scss */
+.icons img:hover {
+  filter: grayscale(0);
+}
+/* line 309, ../sass/screen.scss */
+.icons #master-of {
+  display: block;
+  margin-right: 25px;
+}
+/* line 313, ../sass/screen.scss */
+.icons .forma {
+  display: block;
+  margin: 16px 0 0 6px;
+}
+/* line 317, ../sass/screen.scss */
+.icons .interlink {
+  display: block;
+  margin: 26px 0 0 -7px;
+}
+/* line 321, ../sass/screen.scss */
+.icons .web {
+  display: block;
+  margin: 11px 0 0 -11px;
+}
+/* line 325, ../sass/screen.scss */
+.icons .artsoft {
+  display: block;
+  margin: 5px 0 0 8px;
+}
+
+/* line 330, ../sass/screen.scss */
+#main {
+  float: right;
+  padding-top: 1px;
+  width: 528px;
+  height: 1176px;
+}
+/* line 335, ../sass/screen.scss */
+#main h1 {
+  font: 400 26px/36px "Arial";
+  padding: 30px 0 7px 21px;
+  letter-spacing: 0.1px;
+}
+/* line 340, ../sass/screen.scss */
+#main .header-dt {
+  font: 400 22px/30px "Arial";
+  color: #03a7fe;
+  width: 393px;
+}
+/* line 345, ../sass/screen.scss */
+#main .compain-logo {
   float: left;
-  margin: 40px 0px;
+  padding: 7px 20px 120px 0;
+}
+/* line 350, ../sass/screen.scss */
+#main .for-dl {
+  border-top: 1px solid #00a7fb;
+  width: 528px;
+  padding: 7px 0 7px 10px;
+}
+/* line 355, ../sass/screen.scss */
+#main .dl-comp {
+  display: table;
+  text-align: center;
+  width: 393px;
+  font: 400 12px/20px "Arial";
+  padding: 10px 0 20px 10px;
+}
+/* line 362, ../sass/screen.scss */
+#main .dl-comp-dt {
+  font: 400 12px/20px "Arial";
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 150px;
+  background-color: #dfe5e6;
+  border-top: 1px solid #fff;
+}
+/* line 371, ../sass/screen.scss */
+#main .dl-comp-dd {
+  font: 400 12px/20px "Arial";
+  width: 150px;
+  float: left;
+  background-color: #dfe5e6;
+  border-top: 1px solid #fff;
+}
+/* line 378, ../sass/screen.scss */
+#main .site {
+  color: #03a7fe;
+}
+/* line 381, ../sass/screen.scss */
+#main .fa-ic {
+  font: 400 12px/20px "Arial";
+  margin: 0;
+  text-align: right;
+  float: left;
+  width: 150px;
+  background-color: #dfe5e6;
+  border-top: 1px solid #fff;
+}
+/* line 390, ../sass/screen.scss */
+#main .contacts {
+  font: 400 12px/20px "Arial";
+  width: 150px;
+  float: left;
+  text-align: left;
+  background-color: #dfe5e6;
+  border-top: 1px solid #fff;
+}
+
+/* line 399, ../sass/screen.scss */
+#footer {
+  clear: both;
+  width: 776px;
+  border-top: 1px solid #b5b5b7;
+  margin: 100px 0 0 0;
+}
+/* line 404, ../sass/screen.scss */
+#footer .footer {
+  margin-left: 247px;
+  text-indent: 14px;
+  width: 502px;
+  height: 27px;
+  border: 1px solid #d9dada;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  font: 400 10px/25px "Arial";
+  background-color: #d9dada;
 }
